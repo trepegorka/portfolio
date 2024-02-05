@@ -1,0 +1,41 @@
+.Button {
+  background: #7843e9;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.Button:hover {
+  transform: translateY(-3px);
+}
+
+.big {
+  padding: 1.5rem 8rem;
+  font-size: 2rem;
+}
+
+.medium {
+  padding: 1.5rem 5rem;
+  font-size: 1.6rem;
+}
+
+.btn--theme {
+  background: #7843e9;
+  color: #fff;
+}
+
+.btn--theme-inv {
+  color: #111;
+  background: #fff;
+  border: 2px solid #7843e9;
+  box-shadow: none;
+  padding: calc(1.5rem - 2px) calc(5rem - 2px);
+}
+
+/*# sourceMappingURL=Button.module.css.map */

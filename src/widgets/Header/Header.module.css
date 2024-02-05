@@ -1,0 +1,35 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: var(--bg-color);
+}
+
+.dark {
+  box-shadow: 0 10px 100px rgba(255, 255, 255, 0.1);
+}
+
+.light {
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .header__content {
+    padding: 0 2rem;
+  }
+}
+.header__main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+}
+
+/*# sourceMappingURL=Header.module.css.map */

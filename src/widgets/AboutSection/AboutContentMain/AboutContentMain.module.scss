@@ -1,0 +1,35 @@
+.aboutContentTitle {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+  color: var(--primary-color)
+}
+
+@media only screen and (max-width: 37.5em) {
+  .aboutContentTitle {
+    font-size:2.4rem
+  }
+}
+
+.aboutContentDetails{
+
+}
+
+.aboutContentDetailsPara:last-child {
+  margin-bottom: 4rem
+}
+
+.aboutContentDetailsPara {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+  max-width: 60rem;
+  line-height: 1.7;
+  margin-bottom: 1rem
+}
+
+.link{
+  text-decoration: underline;
+  font-weight: 700;
+  color: var(--purple);
+  margin: 0 3px;
+}

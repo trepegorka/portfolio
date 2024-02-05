@@ -1,0 +1,50 @@
+.homeHero__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90rem;
+  width: 92%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .homeHero__content {
+    padding: 19rem 0 13rem 0;
+    margin: auto;
+    position: static;
+    transform: translate(0, 0);
+  }
+}
+.headingPrimary {
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .headingPrimary {
+    font-size: 4.5rem;
+  }
+}
+.homeHero__info {
+  margin: 3rem auto 0 auto;
+  max-width: 80rem;
+}
+
+.textPrimary {
+  color: var(--secondary-color);
+  font-size: 2.2rem;
+  text-align: center;
+  width: 100%;
+  line-height: 1.6;
+}
+
+.homeHero__cta {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=HomeContent.module.css.map */

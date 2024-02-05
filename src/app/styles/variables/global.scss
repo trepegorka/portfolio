@@ -1,0 +1,36 @@
+:root {
+  // colors
+}
+
+.d_none {
+  display: none;
+}
+
+@mixin titleH3 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  @media only screen and (max-width: 37.5em) {
+      font-size:2.4rem
+  }
+}
+
+@mixin customBackground {
+  width: 100%;
+  height: 100%;
+  --s: 300px; /* control the size */
+
+  background: repeating-conic-gradient(
+                  from 30deg,
+                  #0000 0 120deg,
+                  var(--c3) 0 180deg
+  )
+  calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+  repeating-conic-gradient(
+                  from 30deg,
+                  var(--c1) 0 60deg,
+                  var(--c2) 0 120deg,
+                  var(--c3) 0 180deg
+  );
+  background-size: var(--s) calc(var(--s) * 0.577);
+}

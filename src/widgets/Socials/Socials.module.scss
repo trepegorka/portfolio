@@ -1,0 +1,11 @@
+.homeHero__socialIcon:hover{
+  background: var(--purple-light)
+}
+
+.homeHero__socialIcon {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  transition: background .3s;
+  padding: 1rem;
+}

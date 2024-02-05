@@ -1,0 +1,106 @@
+.mainFooter {
+  background: #000;
+  color: #fff
+}
+
+.mainContainer {
+  max-width: 120rem;
+  margin: auto;
+  width: 92%
+}
+
+.mainFooterUpper {
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 0
+}
+
+@media only screen and (max-width: 56.25em) {
+  .mainFooterUpper {
+    padding:6rem 0
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .mainFooterUpper {
+    display:block
+  }
+  .mainFooterRow1 {
+    margin-left:0;
+  }
+}
+
+.mainFooterLower {
+  padding: 4rem 0;
+  border-top: 1px solid #444;
+  color: #eee;
+  font-size: 1.2rem;
+  text-align: center
+}
+
+.mainFooterLower a {
+  text-decoration: underline;
+  font-weight: 700;
+  margin-left: 2px
+}
+
+@media only screen and (max-width: 56.25em) {
+  .mainFooterLower {
+    padding:3.5rem 0
+  }
+}
+
+.mainFooterRow1 {
+  order: 2;
+  margin-left: 30px
+}
+
+@media only screen and (max-width: 56.25em) {
+  .mainFooterRow1 {
+    margin-bottom:5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .mainFooterRow1 {
+    margin-left:0;
+  }
+}
+
+.mainFooterRow2 {
+  width: 40%;
+  order: 1;
+  max-width: 50rem
+}
+
+@media only screen and (max-width: 56.25em) {
+  .mainFooterRow2 {
+    width:100%
+  }
+}
+
+.heading {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px
+}
+
+.mainFooterSocialCont {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  & > div {
+    padding: 0rem 2rem 0rem 0;
+  }
+}
+
+.mainFooterShortDesc {
+  margin-top: 2rem;
+  color: #eee;
+  font-size: 1.5rem;
+  line-height: 1.7
+}
+
+.hoverOff:hover {
+  background-color: transparent;
+}

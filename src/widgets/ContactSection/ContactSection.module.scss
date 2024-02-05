@@ -1,0 +1,19 @@
+.sec_pad {
+  padding: 12rem 0
+}
+
+@media only screen and (max-width: 56.25em) {
+  .sec_pad {
+    padding:8rem 0
+  }
+}
+
+.ContactSection {
+  @include customBackground
+}
+
+.mainContainer {
+  max-width: 120rem;
+  margin: auto;
+  width: 92%
+}
