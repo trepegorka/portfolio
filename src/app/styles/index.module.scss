@@ -23,3 +23,20 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
 }
+
+/* scroll Bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--inverted-secondary-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7843e9;
+}
+

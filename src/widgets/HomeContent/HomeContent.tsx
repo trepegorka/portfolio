@@ -9,6 +9,7 @@ interface HomeContentProps {
     text: string
     buttonText: string
     linkTo: string
+    target?: '_self' | '_blank'
 }
 
 export const HomeContent = (props: HomeContentProps) => {
@@ -17,7 +18,8 @@ export const HomeContent = (props: HomeContentProps) => {
         title,
         text,
         buttonText,
-        linkTo
+        linkTo,
+        target = '_self'
     } = props
     return (
         <div className={classNames(cls.homeHero__content, {}, [className])}>
@@ -29,8 +31,8 @@ export const HomeContent = (props: HomeContentProps) => {
             </div>
 
             <div className={cls.homeHero__cta}>
-                <HashLink to={linkTo}>
-                    <Button theme={ThemeButton.BIG}>{buttonText}</Button>
+                <HashLink to={linkTo} target={target}>
+                    <Button theme={ThemeButton.BIG} disabled={linkTo===''}>{buttonText}</Button>
                 </HashLink>
             </div>
         </div>

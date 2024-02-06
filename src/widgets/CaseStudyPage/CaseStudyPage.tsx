@@ -39,7 +39,9 @@ export const CaseStudyPage = (props: CaseStudyPageProps) => {
                 <HomeContent title={mainTitle}
                     text={shortDescription}
                     buttonText={'Live Link'}
-                    linkTo={liveLink}/>
+                    linkTo={liveLink}
+                    target={'_blank'}
+                />
             </TopSectionCustomBg>
 
             <ProjectDetailsSection>
@@ -57,8 +59,8 @@ export const CaseStudyPage = (props: CaseStudyPageProps) => {
                     </div>
 
                     <h3 className={cls.h3Title}>See Live</h3>
-                    <HashLink to={gitLink}><Button disabled={gitLink===''} className={cls.button} theme={ThemeButton.MEDIUM}>GitHub</Button></HashLink>
-                    <HashLink to={liveLink}><Button disabled={liveLink===''} className={cls.button} theme={ThemeButton.MEDIUM}>Live Link</Button></HashLink>
+                    <HashLink target={'_blank'} to={gitLink}><Button disabled={gitLink===''} className={cls.button} theme={ThemeButton.MEDIUM}>GitHub</Button></HashLink>
+                    <HashLink target={'_blank'} to={liveLink}><Button disabled={liveLink===''} className={cls.button} theme={ThemeButton.MEDIUM}>Live Link</Button></HashLink>
                     <HashLink to={RoutePath.main.concat('#projects')}><Button className={cls.button} theme={ThemeButton.OUTLINE_MEDIUM}>Go back</Button></HashLink>
                 </div>
             </ProjectDetailsSection>
