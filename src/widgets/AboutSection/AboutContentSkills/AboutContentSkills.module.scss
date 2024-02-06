@@ -14,22 +14,6 @@
   flex-wrap: wrap
 }
 
-.skillsSkill {
-  padding: 1rem 2rem;
-  margin-bottom: 1.5rem;
-  margin-right: 1.5rem;
-  font-size: 1.6rem;
-  background: rgba(153,153,153,.2);
-  border-radius: 5px;
-  font-weight: 600;
-  color: var(--primary-color);
-  transition: .3s;
-}
-
-.skillsSkill:hover{
-  transform: scale(1.1);
-}
-
 .secondaryTitle{
   margin-bottom: 1rem;
 }

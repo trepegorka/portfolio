@@ -1,0 +1,9 @@
+.ProjectOverview {
+  width: 100%;
+  max-width: 70rem;
+  margin: auto
+}
+
+.title{
+  @include titleH3
+}

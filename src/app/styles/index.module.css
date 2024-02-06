@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* cyrillic-ext */
 @font-face {
   font-family: "Source Sans Pro";
@@ -340,6 +341,17 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  user-select: none;
+}
+
+/* Для старых браузеров */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 /*# sourceMappingURL=index.module.css.map */

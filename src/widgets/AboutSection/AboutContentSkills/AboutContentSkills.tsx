@@ -1,5 +1,6 @@
 import {classNames} from "src/shared/helpers/classNames/classNames.ts";
 import cls from './AboutContentSkills.module.scss'
+import {SkillContainer} from "src/widgets/SkillContainer/SkillContainer.tsx";
 
 interface AboutContentSkillsProps {
     className?: string
@@ -10,38 +11,38 @@ export const AboutContentSkills = ({className}: AboutContentSkillsProps) => {
         <div className={classNames(cls.AboutContentSkills, {}, [className])}>
             <h3 className={cls.aboutContentTitle}>My Skills</h3>
             <div className={cls.skills}>
-                <div className={cls.skillsSkill}>JavaScript</div>
-                <div className={cls.skillsSkill}>React.js</div>
-                <div className={cls.skillsSkill}>Redux</div>
-                <div className={cls.skillsSkill}>Typescript</div>
-                <div className={cls.skillsSkill}>HTML5</div>
-                <div className={cls.skillsSkill}>CSS3</div>
-                <div className={cls.skillsSkill}>SASS</div>
-                <div className={cls.skillsSkill}>Webpack</div>
-                <div className={cls.skillsSkill}>Vite</div>
-                <div className={cls.skillsSkill}>Jest</div>
-                <div className={cls.skillsSkill}>Storybook</div>
-                <div className={cls.skillsSkill}>Loki</div>
-                <div className={cls.skillsSkill}>GIT</div>
-                <div className={cls.skillsSkill}>NPM</div>
-                <div className={cls.skillsSkill}>UI</div>
-                <div className={cls.skillsSkill}>Code splitting</div>
+                <SkillContainer>JavaScript</SkillContainer>
+                <SkillContainer>React.js</SkillContainer>
+                <SkillContainer>Redux</SkillContainer>
+                <SkillContainer>Typescript</SkillContainer>
+                <SkillContainer>HTML5</SkillContainer>
+                <SkillContainer>CSS3</SkillContainer>
+                <SkillContainer>SASS</SkillContainer>
+                <SkillContainer>Webpack</SkillContainer>
+                <SkillContainer>Vite</SkillContainer>
+                <SkillContainer>Jest</SkillContainer>
+                <SkillContainer>Storybook</SkillContainer>
+                <SkillContainer>Loki</SkillContainer>
+                <SkillContainer>GIT</SkillContainer>
+                <SkillContainer>NPM</SkillContainer>
+                <SkillContainer>UI</SkillContainer>
+                <SkillContainer>Code splitting</SkillContainer>
             </div>
             <h3 className={classNames(cls.aboutContentTitle, {}, [cls.secondaryTitle])}>Secondary skills</h3>
             <div className={cls.skills}>
-                <div className={cls.skillsSkill}>Java</div>
-                <div className={cls.skillsSkill}>Python</div>
-                <div className={cls.skillsSkill}>SQL</div>
-                <div className={cls.skillsSkill}>Bootstrap</div>
-                <div className={cls.skillsSkill}>ANT Design</div>
-                <div className={cls.skillsSkill}>Webflow</div>
+                <SkillContainer>Java</SkillContainer>
+                <SkillContainer>Python</SkillContainer>
+                <SkillContainer>SQL</SkillContainer>
+                <SkillContainer>Bootstrap</SkillContainer>
+                <SkillContainer>ANT Design</SkillContainer>
+                <SkillContainer>Webflow</SkillContainer>
             </div>
             <h3 className={classNames(cls.aboutContentTitle, {}, [cls.secondaryTitle])}>In study</h3>
             <div className={cls.skills}>
-                <div className={cls.skillsSkill}>Advanced Typescript</div>
-                <div className={cls.skillsSkill}>Automation</div>
-                <div className={cls.skillsSkill}>Cypress</div>
-                <div className={cls.skillsSkill}>GraphQL</div>
+                <SkillContainer>Advanced Typescript</SkillContainer>
+                <SkillContainer>Automation</SkillContainer>
+                <SkillContainer>Cypress</SkillContainer>
+                <SkillContainer>GraphQL</SkillContainer>
             </div>
         </div>
     );

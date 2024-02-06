@@ -2,6 +2,7 @@ import {classNames} from 'src/shared/helpers/classNames/classNames'
 import cls from './ProjectRow.module.scss'
 import {Button, ThemeButton} from "src/shared/ui/Button/Button.tsx";
 import AppLink from "src/shared/ui/AppLink/AppLink.tsx";
+import {ImageContainer} from "src/widgets/ImageContainer/ImageContainer.tsx";
 
 interface ProjectRowProps {
     className?: string
@@ -26,14 +27,7 @@ export const ProjectRow = (props: ProjectRowProps) => {
 
     return (
         <div className={classNames(cls.ProjectRow, {}, [className])}>
-            <div className={cls.projectsRowImgCont}>
-                <img
-                    src={imageSrc}
-                    alt={imageAlt}
-                    className={cls.projectsRowImg}
-                    loading="lazy"
-                />
-            </div>
+            <ImageContainer imageSrc={imageSrc} imageAlt={imageAlt}/>
             <div className={cls.projectsRowContent}>
                 <h3 className={cls.projectsRowContentTitle}>{title}</h3>
                 <p className={cls.projectsRowContentDesc}>

@@ -1,6 +1,7 @@
 import {classNames} from 'src/shared/helpers/classNames/classNames'
 import cls from './HomeContent.module.scss'
 import {Button, ThemeButton} from "src/shared/ui/Button/Button.tsx";
+import { HashLink } from 'react-router-hash-link';
 
 interface HomeContentProps {
     className?: string
@@ -28,9 +29,9 @@ export const HomeContent = (props: HomeContentProps) => {
             </div>
 
             <div className={cls.homeHero__cta}>
-                <a href={linkTo}>
+                <HashLink to={linkTo}>
                     <Button theme={ThemeButton.BIG}>{buttonText}</Button>
-                </a>
+                </HashLink>
             </div>
         </div>
     );

@@ -10,7 +10,16 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
   overflow-y: scroll;
-  font-family: 'Source Sans Pro',sans-serif
+  font-family: 'Source Sans Pro',sans-serif;
 }
 
+body {
+  user-select: none;
+}
 
+/* Для старых браузеров */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}

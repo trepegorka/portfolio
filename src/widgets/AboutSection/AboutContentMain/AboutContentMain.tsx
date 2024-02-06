@@ -1,6 +1,8 @@
 import {classNames} from "src/shared/helpers/classNames/classNames.ts";
 import cls from './AboutContentMain.module.scss'
 import {Button, ThemeButton} from "src/shared/ui/Button/Button.tsx";
+import {RoutePath} from "src/app/providers/router/config/routeConfig.tsx";
+import { HashLink } from 'react-router-hash-link';
 
 interface AboutContentMainProps {
     className?: string
@@ -27,9 +29,9 @@ export const AboutContentMain = ({className}: AboutContentMainProps) => {
                 </p>
             </div>
 
-            <a href={"./#contact"}>
+            <HashLink to={RoutePath.main.concat("#contact")}>
                 <Button theme={ThemeButton.MEDIUM}>Contact</Button>
-            </a>
+            </HashLink>
         </div>
             
     );

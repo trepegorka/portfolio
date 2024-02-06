@@ -1,0 +1,39 @@
+.ProjectPage {
+  background-color: var(--bg-color);
+}
+
+.ImageContainer {
+  margin-bottom: 6rem;
+}
+
+.h3Title{
+  @include titleH3;
+  margin-bottom: 3rem;
+}
+
+.description{
+  width: 100%;
+  max-width: 70rem;
+  margin: auto
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+
+.FullTextDescription{
+  margin-bottom: 7rem;
+}
+
+.skillsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 7rem;
+}
+
+.button {
+  margin-right: 2rem;
+}
