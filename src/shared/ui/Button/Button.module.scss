@@ -43,7 +43,8 @@
   font-size: 1.6rem;
   color: var(--primary-color);
   background: transparent;
-  border: 2px solid var(--purple);
+  outline: 3px solid var(--purple);
+  outline-offset: -3px;
 }
 
 .disabled {

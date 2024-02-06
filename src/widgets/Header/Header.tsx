@@ -6,6 +6,7 @@ import {HamburgerMenu} from "src/widgets/HamburgerMenu/HamburgerMenu.tsx";
 import {HeaderNavMenu} from "src/widgets/Header/navMenu/HeaderNavMenu.tsx";
 import {Theme, useTheme} from "src/app/providers/ThemeProvider";
 import {ThemeSwitcher} from "src/widgets/ThemeSwitcher/ThemeSwitcher.tsx";
+import ProgressScrollBar from "src/widgets/ProgressScrollBar/ProgressScrollBar.tsx";
 
 interface HeaderProps {
     className?: string
@@ -27,6 +28,7 @@ export const Header = ({className}: HeaderProps) => {
             </div>
 
             <HeaderSmMenu/>
+            <ProgressScrollBar/>
         </header>
     );
 };

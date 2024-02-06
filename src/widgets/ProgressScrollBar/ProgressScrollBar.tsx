@@ -1,32 +1,30 @@
 import React, { useState, useEffect } from 'react';
-import './ProgressScrollBar.module.scss'; // Подключаем стили
+import cls from './ProgressScrollBar.module.scss'
 
-const ProgressScrollBar = () => {
-    const [progress, setProgress] = useState(0);
+function ProgressScrollBar() {
+    const [scrollProgress, setScrollProgress] = useState(0);
 
     useEffect(() => {
-        const scrollHandler = () => {
-            const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (scrollTop / scrollHeight) * 100;
-            setProgress(scrolled);
-        };
+        function updateScrollProgress() {
+            const winScroll = document.documentElement.scrollTop;
+            const height =
+                document.documentElement.scrollHeight -
+                document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            setScrollProgress(scrolled);
+        }
 
-        window.addEventListener('scroll', scrollHandler);
+        window.addEventListener('scroll', updateScrollProgress);
 
         return () => {
-            window.removeEventListener('scroll', scrollHandler);
+            window.removeEventListener('scroll', updateScrollProgress);
         };
     }, []);
 
     return (
-        <div className="progress-bar-container">
-            <div
-                className="progress-bar"
-                style={{ width: `${progress}%` }}
-            />
-        </div>
+        <div className={cls.progress} style={{ width: `${scrollProgress}%` }}></div>
     );
-};
+}
 
-export default ProgressBar;
+export default ProgressScrollBar;
+

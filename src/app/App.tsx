@@ -7,7 +7,6 @@ import {Footer} from "src/widgets/Footer/Footer.tsx";
 import {AppRouter} from "src/app/providers/router";
 import ScrollToTop from "src/shared/helpers/ScrollToTop/ScrollToTop.tsx";
 import {useEffect} from "react";
-import ProgressScrollBar from "src/widgets/ProgressScrollBar/ProgressScrollBar.tsx";
 
 function App() {
 
@@ -17,14 +16,13 @@ function App() {
     },[theme])
 
     return(
-        <div className={classNames(cls.app, {}, [])}>
+        <div className={classNames(cls.app, {[cls[theme]]:true}, [])}>
             <NavbarProvider>
                 <Header/>
             </NavbarProvider>
             <ScrollToTop/>
             <AppRouter/>
             <Footer/>
-            <ProgressScrollBar/>
         </div>
     )
 }
