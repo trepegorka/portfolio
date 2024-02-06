@@ -9,9 +9,7 @@ export enum ThemeButton {
 }
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
     className?: string
-    linkTo?: string
     theme: ThemeButton
-    target?: '_blank' | '_self'
 }
 
 export const Button: FC<ButtonProps> = (props) => {
@@ -19,18 +17,12 @@ export const Button: FC<ButtonProps> = (props) => {
         className,
         theme,
         children,
-        linkTo,
-        target= '_self',
         ...otherProps
     } = props
 
     return (
-        <button>
-            <a className={classNames(cls.Button, {[cls[theme]]: true}, [className])}
-                href={linkTo}
-                target={target}>
-                {children}
-            </a>
+        <button className={classNames(cls.Button, {[cls[theme]]: true}, [className])}>
+            {children}
         </button>
     );
 };

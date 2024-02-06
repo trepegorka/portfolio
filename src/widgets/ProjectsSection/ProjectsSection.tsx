@@ -29,7 +29,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className }: P
                     <ProjectRow
                         imageSrc={'src/shared/assets/images/portfolio.png'}
                         imageAlt={'Software Screenshot 2'}
-                        title={'Portfolio'}
+                        title={'Portfolio DEMO'}
                         text={'A multi-page React-based website presenting projects and skills. This site is a simple yet unique portfolio to which I added theme switching, language switching and other features.'}
                         linkTo={'/project2'}
                     />
@@ -39,7 +39,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className }: P
                         imageAlt={'Software Screenshot 3'}
                         title={'BitScouts'}
                         text={'Landing page for processing school. Webflow was used to speed up the design and creating processes. UI/UX-focused development'}
-                        linkTo={'/project2'}
+                        linkTo={'/project3'}
                     />
                 </div>
             </div>

@@ -1,17 +1,72 @@
-/* Error: Undefined mixin.
- *   ,
- * 9 |   @include customBackground
- *   |   ^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   HomeSection.module.scss 9:3  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 9 \2502    @include customBackground\a   \2502    ^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   HomeSection.module.scss 9:3  root stylesheet";
+.home_hero__mouse_scroll_cont {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
+@media only screen and (max-width: 37.5em) {
+  .home_hero__mouse_scroll_cont {
+    display: none;
+  }
+}
+.mouse {
+  width: 25px;
+  height: 40px;
+  border: 2px solid var(--primary-color);
+  border-radius: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mouse::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  opacity: 1;
+  animation: wheel 1.3s infinite;
+  -webkit-animation: wheel 1.3s infinite;
+}
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 27px;
+  }
+}
+@-webkit-keyframes wheel {
+  to {
+    opacity: 0;
+    top: 27px;
+  }
+}
+.homeHero__socials {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fafafa;
+  box-shadow: var(--secondary-color) 0 7px 29px 0;
+  padding: 0.5rem;
+}
+
+.dark {
+  box-shadow: var(--inverted-secondary-color) 0 7px 29px 0;
+}
+
+.light {
+  box-shadow: var(--secondary-color) 0 7px 29px 0;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .homeHero__socials {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=HomeSection.module.css.map */

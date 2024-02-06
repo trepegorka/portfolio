@@ -1,0 +1,17 @@
+.TopSectionCustomBg {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  height: 100vh;
+  min-height: 80rem;
+  max-height: 120rem;
+  position: relative;
+
+  @include customBackground
+}
+
+@media only screen and (max-width: 37.5em) {
+  .TopSectionCustomBg {
+    height:unset;
+    min-height: unset
+  }
+}

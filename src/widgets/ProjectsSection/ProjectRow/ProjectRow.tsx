@@ -1,6 +1,7 @@
 import {classNames} from 'src/shared/helpers/classNames/classNames'
 import cls from './ProjectRow.module.scss'
 import {Button, ThemeButton} from "src/shared/ui/Button/Button.tsx";
+import AppLink from "src/shared/ui/AppLink/AppLink.tsx";
 
 interface ProjectRowProps {
     className?: string
@@ -38,7 +39,10 @@ export const ProjectRow = (props: ProjectRowProps) => {
                 <p className={cls.projectsRowContentDesc}>
                     {text}
                 </p>
-                <Button theme={ThemeButton.MEDIUM} linkTo={linkTo} target={target}>Case Study</Button>
+
+                <AppLink to={linkTo} >
+                    <Button theme={ThemeButton.MEDIUM}>Case Study</Button>
+                </AppLink>
             </div>
         </div>
     );

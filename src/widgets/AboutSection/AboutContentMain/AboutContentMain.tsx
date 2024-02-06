@@ -26,7 +26,10 @@ export const AboutContentMain = ({className}: AboutContentMainProps) => {
                     If you have a good opportunity that matches my skills and experience then don't hesitate to <strong>contact</strong> me.
                 </p>
             </div>
-            <Button theme={ThemeButton.MEDIUM} linkTo={"./#contact"}>Contact</Button>
+
+            <a href={"./#contact"}>
+                <Button theme={ThemeButton.MEDIUM}>Contact</Button>
+            </a>
         </div>
             
     );

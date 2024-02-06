@@ -4,22 +4,33 @@ import {Button, ThemeButton} from "src/shared/ui/Button/Button.tsx";
 
 interface HomeContentProps {
     className?: string
+    title: string
+    text: string
+    buttonText: string
+    linkTo: string
 }
 
-export const HomeContent = ({className}: HomeContentProps) => {
+export const HomeContent = (props: HomeContentProps) => {
+    const {
+        className,
+        title,
+        text,
+        buttonText,
+        linkTo
+    } = props
     return (
         <div className={classNames(cls.homeHero__content, {}, [className])}>
-            <h1 className={cls.headingPrimary}>Hey, I'm Egor Potapko</h1>
+            <h1 className={cls.headingPrimary}>{title}</h1>
             <div className={cls.homeHero__info}>
                 <p className={cls.textPrimary}>
-                    A Frontend focused Web Developer building the Frontend of Websites
-                    and Web Applications that leads to the success of the overall
-                    product
+                    {text}
                 </p>
             </div>
 
             <div className={cls.homeHero__cta}>
-                <Button linkTo={'./#about'} theme={ThemeButton.BIG}>About Me</Button>
+                <a href={linkTo}>
+                    <Button theme={ThemeButton.BIG}>{buttonText}</Button>
+                </a>
             </div>
         </div>
     );
