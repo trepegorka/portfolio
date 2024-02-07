@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Button, ThemeButton } from 'src/shared/ui/Button/Button.tsx';
 import cls from './ContactForm.module.scss';
 
 interface FormChangeEvent extends React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> {
@@ -8,6 +9,7 @@ interface FormChangeEvent extends React.ChangeEvent<HTMLInputElement | HTMLTextA
 interface FormSubmitEvent extends React.FormEvent<HTMLFormElement> {
     preventDefault(): void;
 }
+
 
 export const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -23,27 +25,6 @@ export const ContactForm = () => {
 
     const handleSubmit = (e: FormSubmitEvent) => {
         e.preventDefault();
-        // Отправка формы на сервер
-        fetch('/sendmail.php', {
-            method: 'POST',
-            body: JSON.stringify(formData),
-        })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to submit form');
-                }
-                alert('Form submitted successfully!');
-                // Очистка данных формы
-                setFormData({
-                    name: '',
-                    email: '',
-                    message: '',
-                });
-            })
-            .catch(error => {
-                console.error('Error submitting form:', error);
-                alert('Failed to submit form. Please try again later.');
-            });
     };
 
     return (
@@ -73,9 +54,9 @@ export const ContactForm = () => {
                         type="email"
                         className={cls.contactFormInput}
                         name="email"
-                        id="email"
                         value={formData.email}
-                        onChange={handleChange} // Обработка изменения поля email
+                        onChange={handleChange}
+                        id="email"
                     />
                 </div>
                 <div className={cls.contactFormField}>
@@ -89,12 +70,12 @@ export const ContactForm = () => {
                         className={cls.contactFormInput}
                         placeholder="Enter Your Message"
                         name="message"
-                        id="message"
                         value={formData.message}
-                        onChange={handleChange} // Обработка изменения поля message
+                        onChange={handleChange}
+                        id="message"
                     ></textarea>
                 </div>
-                <button type="submit">Submit</button>
+                <Button type="submit" theme={ThemeButton.MEDIUM} className={cls.contact__btn}>Submit</Button>
             </form>
         </div>
     );
