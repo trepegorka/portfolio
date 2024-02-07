@@ -24,6 +24,7 @@ export const AboutContentSkills = ({className}: AboutContentSkillsProps) => {
                 <SkillContainer>Storybook</SkillContainer>
                 <SkillContainer>Loki</SkillContainer>
                 <SkillContainer>GIT</SkillContainer>
+                <SkillContainer>CI/CD</SkillContainer>
                 <SkillContainer>NPM</SkillContainer>
                 <SkillContainer>UI</SkillContainer>
                 <SkillContainer>Code splitting</SkillContainer>
