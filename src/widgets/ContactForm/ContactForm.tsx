@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { Button, ThemeButton } from 'src/shared/ui/Button/Button.tsx';
 import cls from './ContactForm.module.scss';
 
