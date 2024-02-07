@@ -51,7 +51,7 @@ export const ContactForm = ({className}: ContactFormProps) => {
                     ></textarea>
                 </div>
 
-                <Button type='submit' theme={ThemeButton.MEDIUM} className={cls.contact__btn}>Submit</Button>
+                <Button disabled={true} type='submit' theme={ThemeButton.MEDIUM} className={cls.contact__btn}>Submit(Soon)</Button>
             </form>
         </div>
             
