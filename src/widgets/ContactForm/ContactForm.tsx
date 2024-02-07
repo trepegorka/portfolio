@@ -9,7 +9,7 @@ interface ContactFormProps {
 export const ContactForm = ({className}: ContactFormProps) => {
     return (
         <div className={classNames(cls.contactFormContainer, {}, [className])}>
-            <form action="sendmail.php" className={cls.contactForm} method="post">
+            <form method="POST" action="sendmail.php" className={cls.contactForm}>
                 <div className={cls.contactFormField}>
                     <label className={cls.contactFormLabel} htmlFor="name">
                         Name
@@ -51,7 +51,7 @@ export const ContactForm = ({className}: ContactFormProps) => {
                     ></textarea>
                 </div>
 
-                <Button disabled={true} type='submit' theme={ThemeButton.MEDIUM} className={cls.contact__btn}>Submit(Soon)</Button>
+                <Button type='submit' theme={ThemeButton.MEDIUM} className={cls.contact__btn}>Submit</Button>
             </form>
         </div>
             
