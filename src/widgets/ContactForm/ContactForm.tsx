@@ -29,8 +29,8 @@ export const ContactForm = () => {
 
     return (
         <div className={cls.contactFormContainer}>
-            <form method="POST" className={cls.contactForm} onSubmit={handleSubmit} data-netlify="true" name="contact-form">
-                <input type="hidden" name="contact-form" value="contact" />
+            <form method="post" className={cls.contactForm} onSubmit={handleSubmit} data-netlify="true" name="contact">
+                <input type="hidden" name="form-name" value="contact" />
                 <div className={cls.contactFormField}>
                     <label htmlFor="name" className={cls.contactFormLabel}>Name</label>
                     <input
