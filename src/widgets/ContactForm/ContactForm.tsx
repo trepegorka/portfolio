@@ -25,11 +25,26 @@ export const ContactForm = () => {
 
     const handleSubmit = (e: FormSubmitEvent) => {
         e.preventDefault();
+        // Добавляем код для отправки данных формы на сервер Netlify
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData).toString(),
+        })
+            .then(() => {
+                // Успешное завершение, выполните действия, такие как перенаправление или отображение сообщения об успехе.
+                console.log('Form submitted successfully');
+            })
+            .catch(error => {
+                // Обработка ошибки отправки формы
+                console.error('Form submission error:', error);
+            });
     };
 
     return (
         <div className={cls.contactFormContainer}>
-            <form method="post" className={cls.contactForm} onSubmit={handleSubmit} data-netlify="true" name="contact">
+            <form method="post" className={cls.contactForm} onSubmit={handleSubmit} data-netlify="true" name="contact" action="/success">
+                {/* Указываем действие обработчика формы на страницу успеха */}
                 <input type="hidden" name="form-name" value="contact" />
                 <div className={cls.contactFormField}>
                     <label htmlFor="name" className={cls.contactFormLabel}>Name</label>
