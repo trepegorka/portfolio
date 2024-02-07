@@ -71,6 +71,7 @@ export const ContactForm = () => {
                         id="message"
                     ></textarea>
                 </div>
+                <button style={{margin: '20px'}} type="submit">Send</button>
                 <Button type="submit" theme={ThemeButton.MEDIUM} className={cls.contact__btn}>Submit</Button>
             </form>
         </div>
