@@ -19,7 +19,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className }: P
 
                 <div className={cls.projectsContent}>
                     <ProjectRow
-                        imageSrc={'src/shared/assets/images/prodFront.png'}
+                        imageSrc={'https://i.ibb.co/YRKppQJ/prod-Front.png'}
                         imageAlt={'Software Screenshot 1'}
                         title={'FrontEnd in Production\nIn Progress...'}
                         text={'Enterprise application developed using powerful development solutions. This application includes development from scratch, test coverage, writing storybook for other developers, optimization, configurations and much more. '}
@@ -27,7 +27,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className }: P
                     />
 
                     <ProjectRow
-                        imageSrc={'src/shared/assets/images/portfolio.png'}
+                        imageSrc={'https://i.ibb.co/8x39Lnt/portfolio.png'}
                         imageAlt={'Software Screenshot 2'}
                         title={'Portfolio DEMO'}
                         text={'A multi-page React-based website presenting projects and skills. This site is a simple yet unique portfolio to which I added theme switching, language switching and other features.'}
@@ -35,7 +35,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className }: P
                     />
 
                     <ProjectRow
-                        imageSrc={'src/shared/assets/images/schoolProc.png'}
+                        imageSrc={'https://i.ibb.co/vhLLpbr/school-Proc.png'}
                         imageAlt={'Software Screenshot 3'}
                         title={'BitScouts'}
                         text={'Landing page for processing school. Webflow was used to speed up the design and creating processes. UI/UX-focused development'}

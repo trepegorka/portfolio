@@ -14,7 +14,7 @@ export const Logo = ({className}: LogoProps) => {
             <div className={classNames(cls.header__logoContainer, {}, [className])}>
                 <div className={cls.header__logoImgCont}>
                     <img
-                        src="src/shared/assets/images/yahorpatapka.png"
+                        src="https://i.ibb.co/nL4MRqs/yahorpatapka.png"
                         alt="Egor Potapko Logo Image"
                         className={cls.header__logoImg}
                     />
