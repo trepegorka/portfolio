@@ -13,7 +13,7 @@ interface HeaderProps {
 }
 
 export const Header = ({className}: HeaderProps) => {
-    const {theme, changeTheme} = useTheme()
+    const {theme} = useTheme()
     let themeMode;
     theme === Theme.DARK? themeMode = 'dark' : themeMode = 'light'
     return (

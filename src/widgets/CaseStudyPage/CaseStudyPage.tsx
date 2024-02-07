@@ -19,7 +19,7 @@ interface CaseStudyPageProps {
     gitLink?: string
     projectImageSrc: string
     children: React.ReactNode
-    skills: Array[string]
+    skills: Array<string>
 }
 
 export const CaseStudyPage = (props: CaseStudyPageProps) => {
@@ -53,7 +53,7 @@ export const CaseStudyPage = (props: CaseStudyPageProps) => {
                     </div>
                     <h3 className={cls.h3Title}>Tools Used</h3>
                     <div className={cls.skillsContainer}>
-                        {skills.map((skill, index) => (
+                        {skills.map((skill: string, index: number) => (
                             <SkillContainer key={index}>{skill}</SkillContainer>
                         ))}
                     </div>

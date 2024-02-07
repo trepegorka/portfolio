@@ -4,7 +4,7 @@ import cls from './ImageContainer.module.scss'
 interface ImageContainerProps {
     className?: string
     imageSrc: string
-    imageAlt:string
+    imageAlt: string
 }
 
 export const ImageContainer = (props: ImageContainerProps) => {

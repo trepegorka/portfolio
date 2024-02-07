@@ -12,7 +12,6 @@ export const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
     const { theme, changeTheme } = useTheme()
 
     return (
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         <div className={classNames(cls.container, {}, [cls.buttonSpace, className])}>
             <label className={cls.toggle} htmlFor={cls.switch}>
                 <input id={cls.switch}
@@ -21,12 +20,10 @@ export const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
                     }
                     checked={theme === Theme.LIGHT}/>
 
-                {/* eslint-disable-next-line @typescript-eslint/no-unsafe-argument */}
                 <div className={classNames(cls.icon, {}, [cls.iconMoon])}>
                     <IconMoon/>
                 </div>
 
-                {/* eslint-disable-next-line @typescript-eslint/no-unsafe-argument */}
                 <div className={classNames(cls.icon, {}, [cls.iconSun])}>
                     <IconSun/>
                 </div>

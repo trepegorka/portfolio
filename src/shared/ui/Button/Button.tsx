@@ -19,15 +19,14 @@ export const Button: FC<ButtonProps> = (props) => {
         className,
         theme,
         children,
-        disabled,
-        ...otherProps
+        disabled= false,
     } = props
 
     return (
         <button
             disabled={disabled}
             className={classNames(cls.Button,
-                {[cls[theme]]: true, [cls.disabled]:disabled},
+                {[cls[theme]]: true, [cls.disabled]: disabled},
                 [className])}>
             {children}
         </button>

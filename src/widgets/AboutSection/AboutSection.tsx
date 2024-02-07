@@ -10,7 +10,7 @@ interface AboutSectionProps {
 
 export const AboutSection = ({ className }: AboutSectionProps) => {
     return (
-        <section id="about" className={classNames(cls.about, {}, [cls.secPad])}>
+        <section id="about" className={classNames(cls.about, {}, [className, cls.secPad])}>
             <div className={cls.mainContainer}>
                 <SectionTitle
                     title={'About Me'}

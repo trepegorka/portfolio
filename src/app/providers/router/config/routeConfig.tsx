@@ -1,4 +1,3 @@
-import React from 'react'
 import { type RouteProps } from 'react-router-dom'
 import {MainPage} from "src/pages/Main/MainPage.tsx";
 import {Project1Page} from "src/pages/Project1/Project1Page.tsx";

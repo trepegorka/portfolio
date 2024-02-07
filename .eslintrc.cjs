@@ -42,8 +42,8 @@ module.exports = {
     'no-underscore-dangle': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     "@typescript-eslint/no-unsafe-argument": "warn",
-    "i18next/no-literal-string": ['error', {markupOnly: true}],
-    "max-len": [1, {"code": 100, ignoreComments: true}],
+    "i18next/no-literal-string": ['warn', {markupOnly: true}],
+    "max-len": [1, {"code": 105, ignoreComments: true}],
 
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error"

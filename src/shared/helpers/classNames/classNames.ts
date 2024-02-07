@@ -11,7 +11,7 @@ export function classNames (
         ...(additional === undefined ? [] : additional.filter(Boolean)),
         ...Object.entries(mods)
             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-            // @ts-expect-error
+            // @ts-ignore
             .filter(([className, value]) => Boolean(value))
             .map(([className]) => className)
     ]

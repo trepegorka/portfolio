@@ -30,7 +30,7 @@ export const Project2Page = ({className}: Project2PageProps) => {
                     The Portfolio project is a comprehensive showcase of my frontend development skills,
                     designed to be both simplified and fully functional. This website is built using
                     technologies such as <strong>JavaScript</strong> including the latest features, <strong>React 18,
-                    Typescript, Vite, and SCSS modules</strong>. Used tools like Eslint and
+                        Typescript, Vite, and SCSS modules</strong>. Used tools like Eslint and
                     Npm to ensure code quality and manage dependencies.
                 </p>
                 <p>

@@ -1,8 +1,6 @@
 import {classNames} from 'src/shared/helpers/classNames/classNames'
 import cls from './ContactForm.module.scss'
 import {Button, ThemeButton} from "src/shared/ui/Button/Button.tsx";
-import {Simulate} from "react-dom/test-utils";
-import submit = Simulate.submit;
 
 interface ContactFormProps {
     className?: string
@@ -44,8 +42,8 @@ export const ContactForm = ({className}: ContactFormProps) => {
                     </label>
                     <textarea
                         required
-                        cols="30"
-                        rows="10"
+                        cols={30}
+                        rows={10}
                         className={cls.contactFormInput}
                         placeholder="Enter Your Message"
                         name="message"
