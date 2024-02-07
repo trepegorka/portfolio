@@ -12,7 +12,7 @@ export const Project3Page = ({className}: Project3PageProps) => {
     const liveLink = 'https://bitscouts.ru'
     const gitLink = ''
     const projectImageSrc = 'https://i.ibb.co/vhLLpbr/school-Proc.png'
-    const skills = ['Webflow', 'Javascript', 'HTML5', 'CSS3', 'Canvas']
+    const skills = ['Webflow', 'Javascript', 'HTML5', 'CSS3', 'Canva']
     return (
         <div className={classNames(cls.ProjectPage, {}, [className])}>
 
