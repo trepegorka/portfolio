@@ -1,29 +1,39 @@
-import {classNames} from 'src/shared/helpers/classNames/classNames'
-import cls from './ContactForm.module.scss'
-import {Button, ThemeButton} from "src/shared/ui/Button/Button.tsx";
+import { useState } from 'react';
+import { Button, ThemeButton } from 'src/shared/ui/Button/Button.tsx';
+import cls from './ContactForm.module.scss';
 
-interface ContactFormProps {
-    className?: string
-}
+export const ContactForm = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: '',
+    });
 
-export const ContactForm = ({className}: ContactFormProps) => {
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Отправка формы
+    };
+
     return (
-        <div className={classNames(cls.contactFormContainer, {}, [className])}>
-            <form name={'contact'} 
-                method="POST"
-                data-netlify="true"
-                className={cls.contactForm} >
+        <div className={cls.contactFormContainer}>
+            <form method="POST" className={cls.contactForm} onSubmit={handleSubmit} data-netlify="true" name="contact-form">
+                <input type="hidden" name="form-name" value="contact-form" />
                 <div className={cls.contactFormField}>
-                    <label className={cls.contactFormLabel} htmlFor="name">
-                        Name
-                    </label>
+                    <label htmlFor="name" className={cls.contactFormLabel}>Name</label>
                     <input
-                        required
-                        placeholder="Enter Your Name"
                         type="text"
-                        className={cls.contactFormInput}
-                        name="name"
                         id="name"
+                        name="name"
+                        placeholder="Enter Your Name"
+                        className={cls.contactFormInput}
+                        value={formData.name}
+                        onChange={handleChange}
+                        required
                     />
                 </div>
                 <div className={cls.contactFormField}>
@@ -53,10 +63,8 @@ export const ContactForm = ({className}: ContactFormProps) => {
                         id="message"
                     ></textarea>
                 </div>
-
-                <Button type='submit' theme={ThemeButton.MEDIUM} className={cls.contact__btn}>Submit</Button>
+                <Button type="submit" theme={ThemeButton.MEDIUM} className={cls.contact__btn}>Submit</Button>
             </form>
         </div>
-
     );
 };
