@@ -6,8 +6,8 @@ import {ImageContainer} from "src/widgets/ImageContainer/ImageContainer.tsx";
 
 interface ProjectRowProps {
     className?: string
-    imageSrc?: string
-    imageAlt?: string
+    imageSrc: string
+    imageAlt: string
     title: string
     text: string
     linkTo: string
@@ -22,7 +22,6 @@ export const ProjectRow = (props: ProjectRowProps) => {
         title,
         text,
         linkTo,
-        target,
     } = props
 
     return (
@@ -34,7 +33,7 @@ export const ProjectRow = (props: ProjectRowProps) => {
                     {text}
                 </p>
 
-                <AppLink to={linkTo} >
+                <AppLink to={linkTo}>
                     <Button theme={ThemeButton.MEDIUM}>Case Study</Button>
                 </AppLink>
             </div>

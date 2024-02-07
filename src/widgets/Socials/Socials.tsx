@@ -39,7 +39,7 @@ export const Socials = ({className, invertedColor = false}: SocialsProps) => {
             />
 
             <SocialIcon
-                href="https://github.com/"
+                href="https://github.com/trepegorka"
                 svgSrc={invertedColor
                     ? 'https://d33wubrfki0l68.cloudfront.net/38469cf88d038b6ba3322c9fcb93a8f7167df4b9/cb0b9/assets/svg/github-dark.svg'
                     : 'https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png'}
