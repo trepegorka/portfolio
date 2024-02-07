@@ -9,7 +9,10 @@ interface ContactFormProps {
 export const ContactForm = ({className}: ContactFormProps) => {
     return (
         <div className={classNames(cls.contactFormContainer, {}, [className])}>
-            <form method="POST" className={cls.contactForm} data-netlify="true">
+            <form name={'contact'} 
+                method="POST"
+                data-netlify="true"
+                className={cls.contactForm} >
                 <div className={cls.contactFormField}>
                     <label className={cls.contactFormLabel} htmlFor="name">
                         Name
