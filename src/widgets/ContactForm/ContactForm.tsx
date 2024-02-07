@@ -1,6 +1,15 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Button, ThemeButton } from 'src/shared/ui/Button/Button.tsx';
 import cls from './ContactForm.module.scss';
+
+interface FormChangeEvent extends React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> {
+    target: HTMLInputElement | HTMLTextAreaElement;
+}
+
+interface FormSubmitEvent extends React.FormEvent<HTMLFormElement> {
+    preventDefault(): void;
+}
+
 
 export const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -9,14 +18,13 @@ export const ContactForm = () => {
         message: '',
     });
 
-    const handleChange = (e) => {
+    const handleChange = (e: FormChangeEvent) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: FormSubmitEvent) => {
         e.preventDefault();
-        // Отправка формы
     };
 
     return (
