@@ -43,7 +43,13 @@ export const AboutContentSkills = ({className}: AboutContentSkillsProps) => {
                 <SkillContainer>Advanced Typescript</SkillContainer>
                 <SkillContainer>Automation</SkillContainer>
                 <SkillContainer>Cypress</SkillContainer>
+                <SkillContainer>Docker</SkillContainer>
                 <SkillContainer>GraphQL</SkillContainer>
+                <SkillContainer>Next.js</SkillContainer>
+                <SkillContainer>Tailwind CSS</SkillContainer>
+                <SkillContainer>React Native</SkillContainer>
+                <SkillContainer>PostgreSQL</SkillContainer>
+                <SkillContainer>Mongo DB</SkillContainer>
             </div>
         </div>
     );
