@@ -12,6 +12,8 @@ interface ProjectRowProps {
     text: string
     linkTo: string
     target?: '_self' | '_blank'
+    disabled? : boolean
+    mobile?
 }
 
 export const ProjectRow = (props: ProjectRowProps) => {
@@ -22,11 +24,13 @@ export const ProjectRow = (props: ProjectRowProps) => {
         title,
         text,
         linkTo,
+        disabled,
+        mobile
     } = props
 
     return (
         <div className={classNames(cls.ProjectRow, {}, [className])}>
-            <ImageContainer imageSrc={imageSrc} imageAlt={imageAlt}/>
+            <ImageContainer imageSrc={imageSrc} imageAlt={imageAlt} mobile={mobile}/>
             <div className={cls.projectsRowContent}>
                 <h3 className={cls.projectsRowContentTitle}>{title}</h3>
                 <p className={cls.projectsRowContentDesc}>
@@ -34,7 +38,7 @@ export const ProjectRow = (props: ProjectRowProps) => {
                 </p>
 
                 <AppLink to={linkTo}>
-                    <Button theme={ThemeButton.MEDIUM}>Case Study</Button>
+                    <Button disabled={disabled} theme={ThemeButton.MEDIUM}>Case Study</Button>
                 </AppLink>
             </div>
         </div>
