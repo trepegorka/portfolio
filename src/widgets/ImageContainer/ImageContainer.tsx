@@ -15,6 +15,7 @@ export const ImageContainer = (props: ImageContainerProps) => {
         imageSrc,
         mobile
     } = props
+    /* eslint-disable */
     return (
         <div className={classNames(cls.projectsRowImgCont, {}, [className])}>
             {mobile
