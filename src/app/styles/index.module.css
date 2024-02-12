@@ -317,6 +317,7 @@ a:focus, button:focus, input:focus, textarea:focus {
   --purple-light: rgba(120,67,233,.4);
   --shadow: 24px 24px 37px #0f0f0f,
     -24px -24px 37px #3d3d3d;
+  --simple-shadow: -24px -24px 37px #3d3d3d;
   --c1: #141414;
   --c2: #262626;
   --c3: #1f1f1f;
@@ -334,6 +335,7 @@ a:focus, button:focus, input:focus, textarea:focus {
   --purple-light: rgba(120,67,233,.2);
   --shadow: 24px 24px 70px #646464,
   -24px -24px 50px #ffffff;
+  --simple-shadow: -24px -24px 50px #8f8f8f;
   --c1: rgba(217, 217, 217, 0.6);
   --c2: #fafafa;
   --c3: #f0f0f0;

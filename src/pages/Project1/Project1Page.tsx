@@ -11,7 +11,7 @@ export const Project1Page = ({className}: Project1PageProps) => {
     const shortDescription = 'This page contains the case study of FrontEnd in Production Web Application which includes the Project Overview, Tools Used and Live Links to the official product.'
     const liveLink = ''
     const gitLink = 'https://github.com/trepegorka/advanced-frontend'
-    const projectImageSrc = 'https://i.ibb.co/YRKppQJ/prod-Front.png'
+    const projectImageSrc = 'https://i.ibb.co/42QLMs5/image.png'
     const skills = ['Javascript 2020+', 'React 18', 'Typescript', 'Webpack', 'Redux',
         'Eslint', 'Stylelint', 'Jest', 'Storybook', 'Babel', 'loki', 'i18n', 'CI/CD', 'Husky',
         'Git', 'Npm', 'Feature-Sliced Design', 'UI frameworks', '...']

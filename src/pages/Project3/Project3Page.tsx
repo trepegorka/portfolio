@@ -11,7 +11,7 @@ export const Project3Page = ({className}: Project3PageProps) => {
     const shortDescription = 'This page contains the case study of FrontEnd in Production Web Application which includes the Project Overview, Tools Used and Live Links to the official product.'
     const liveLink = 'https://bitscouts.ru'
     const gitLink = ''
-    const projectImageSrc = 'https://i.ibb.co/vhLLpbr/school-Proc.png'
+    const projectImageSrc = 'https://i.ibb.co/7rTWwNZ/Screenshot-2024-02-12-220856.png'
     const skills = ['Webflow', 'Javascript', 'HTML5', 'CSS3', 'Canva']
     return (
         <div className={classNames(cls.ProjectPage, {}, [className])}>

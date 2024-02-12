@@ -50,9 +50,55 @@
   height: 4px;
   background: var(--primary-color);
   display: block;
-  margin: auto;
-  margin-top: 3px;
+  margin: 3px auto auto;
   border-radius: 20px;
+}
+
+.laptop {
+  margin: auto;
+  width: 100%;
+}
+
+.mainScreen {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+  max-height: 100%;
+  aspect-ratio: 7/4;
+  background-color: var(--primary-color);
+  border-bottom: 10px solid;
+  border-top: 10px solid;
+  border-left: 6px solid;
+  border-right: 6px solid;
+  border-color: var(--inverted-primary-color);
+  border-radius: 10px 10px 0 0;
+  box-shadow: var(--simple-shadow);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.camera {
+  width: 1%;
+  aspect-ratio: 1/1;
+  min-width: 5px;
+  background: var(--inverted-secondary-color);
+  margin-top: -8px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.keyboard {
+  background-color: var(--inverted-secondary-color);
+  width: 100%;
+  max-width: 580px;
+  aspect-ratio: 40/1;
+  margin: auto;
+  border-radius: 20px 20px 50px 50px;
+  box-shadow: var(--shadow);
 }
 
 /*# sourceMappingURL=ImageContainer.module.css.map */

@@ -22,17 +22,22 @@ export const ImageContainer = (props: ImageContainerProps) => {
                 ? (
                     <div className={cls.mobilePhone}>
                         <div className={cls.brove}><span className={cls.speaker}></span></div>
-                        <div style={{backgroundImage : `url(${imageSrc})`}} className={cls.screen}>
+                        <div style={{backgroundImage: `url(${imageSrc})`}} className={cls.screen}>
 
                         </div>
                     </div>
                 )
-                : (<img
-                    src={imageSrc}
-                    alt={imageAlt}
-                    className={cls.projectsRowImg}
-                    loading="lazy"
-                />)
+                : (
+                    <div className={cls.laptop}>
+                        <div style={{backgroundImage: `url(${imageSrc})`}} className={cls.mainScreen}>
+                            <div className={cls.camera}></div>
+                            <div className={cls.Lscreen}>
+
+                            </div>
+                        </div>
+                        <div className={cls.keyboard}></div>
+                    </div>
+                )
             }
         </div>
     );

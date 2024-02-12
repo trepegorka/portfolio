@@ -12,7 +12,7 @@ export const Project2Page = ({className}: Project2PageProps) => {
     const shortDescription = 'This page contains the case study of Portfolio WebSite which includes the Project Overview, Tools Used and Live Links to the official product.'
     const liveLink = RoutePath.main.concat('#home')
     const gitLink = 'https://github.com/trepegorka/portfolio'
-    const projectImageSrc = 'https://i.ibb.co/8x39Lnt/portfolio.png'
+    const projectImageSrc = 'https://i.ibb.co/vVQy0bj/image.png'
     const skills = ['Javascript 2020+', 'React 18', 'Typescript', 'HTML5', 'SCSS', 'Vite',
         'Eslint', 'i18n', 'Npm', 'Feature-Sliced Design','CD' , 'UI/UX']
     return (
