@@ -16,5 +16,8 @@ export default defineConfig({
         additionalData: `@import "src/app/styles/variables/global.scss";`
       }
     }
-  }
+  },
+  server: {
+    port: 3006,
+  },
 })

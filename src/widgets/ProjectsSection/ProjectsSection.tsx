@@ -19,6 +19,15 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className }: P
 
                 <div className={cls.projectsContent}>
                     <ProjectRow
+                        imageSrc={'https://i.ibb.co/hBLwGGV/workout-App.png'}
+                        imageAlt={'Software Screenshot phone'}
+                        title={'Workout App\nIn Progress...'}
+                        text={'Workout Application developed using UI Frameworks such as Chakra UI. The application includes working with logical operations, login form and backend requests.'}
+                        linkTo={'/'}
+                        disabled={true}
+                    />
+
+                    <ProjectRow
                         imageSrc={'https://i.ibb.co/YRKppQJ/prod-Front.png'}
                         imageAlt={'Software Screenshot 1'}
                         title={'FrontEnd in Production\nIn Progress...'}

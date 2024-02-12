@@ -12,6 +12,7 @@ interface ProjectRowProps {
     text: string
     linkTo: string
     target?: '_self' | '_blank'
+    disabled? : boolean
 }
 
 export const ProjectRow = (props: ProjectRowProps) => {
@@ -22,6 +23,7 @@ export const ProjectRow = (props: ProjectRowProps) => {
         title,
         text,
         linkTo,
+        disabled
     } = props
 
     return (
@@ -34,7 +36,7 @@ export const ProjectRow = (props: ProjectRowProps) => {
                 </p>
 
                 <AppLink to={linkTo}>
-                    <Button theme={ThemeButton.MEDIUM}>Case Study</Button>
+                    <Button disabled={disabled} theme={ThemeButton.MEDIUM}>Case Study</Button>
                 </AppLink>
             </div>
         </div>
