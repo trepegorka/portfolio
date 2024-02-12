@@ -13,7 +13,7 @@ interface ProjectRowProps {
     linkTo: string
     target?: '_self' | '_blank'
     disabled? : boolean
-    mobile?
+    mobile? : boolean
 }
 
 export const ProjectRow = (props: ProjectRowProps) => {
