@@ -11,7 +11,6 @@ interface ImageContainerProps {
 export const ImageContainer = (props: ImageContainerProps) => {
     const {
         className,
-        imageAlt,
         imageSrc,
         mobile
     } = props
