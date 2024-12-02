@@ -21,32 +21,30 @@ export const Project4Page = ({className}: PageProps) => {
                 projectImageSrc={projectImageSrc}
                 skills={skills}
             >
-                <h2>Professional Experience</h2>
+                <p><strong>Professional Experience</strong></p>
                 <article className="job">
-                    <h3>Front-end Developer</h3>
+                    <p>Front-end Developer</p>
                     <p><strong>Company:</strong> Andersen</p>
                     <p><strong>Location:</strong> Minsk, Belarus</p>
                     <p><strong>Industry:</strong> IT, System Integration, Internet</p>
-                    <ul>
-                        <li>Collaborated in a team of 14–18 specialists to deliver high-quality, scalable projects
-                            within established deadlines.
-                        </li>
-                        <li>Developed and maintained dynamic web applications
-                            using <strong>React.js</strong>, <strong>Next.js</strong> (App and Page
-                            Router), <strong>TypeScript</strong>, <strong>Redux
-                                Toolkit</strong>, <strong>Storybook</strong>, and <strong>MUI</strong>.
-                        </li>
-                        <li>Deployed applications on cloud infrastructure <strong>AWS</strong>, utilizing <strong>Git
-                            Flow</strong> strategies to optimize deployment processes and streamline team
-                            collaboration.
-                        </li>
-                        <li>Managed reliable data handling with <strong>PostgreSQL</strong>, ensuring data
-                            integrity, performance, and scalability through rigorous testing.
-                        </li>
-                        <li>Configured <strong>Vite</strong> for an optimized development environment, reducing SVG
-                            files by approximately threefold, enhancing performance and maintainability.
-                        </li>
-                    </ul>
+                    <p>Collaborated in a team of 14–18 specialists to deliver high-quality, scalable projects
+                        within established deadlines.
+                    </p>
+                    <p>Developed and maintained dynamic web applications
+                        using <strong>React.js</strong>, <strong>Next.js</strong> (App and Page
+                        Router), <strong>TypeScript</strong>, <strong>Redux
+                            Toolkit</strong>, <strong>Storybook</strong>, and <strong>MUI</strong>.
+                    </p>
+                    <p>Deployed applications on cloud infrastructure <strong>AWS</strong>, utilizing <strong>Git
+                        Flow</strong> strategies to optimize deployment processes and streamline team
+                        collaboration.
+                    </p>
+                    <p>Managed reliable data handling with <strong>PostgreSQL</strong>, ensuring data
+                        integrity, performance, and scalability through rigorous testing.
+                    </p>
+                    <p>Configured <strong>Vite</strong> for an optimized development environment, reducing SVG
+                        files by approximately threefold, enhancing performance and maintainability.
+                    </p>
                 </article>
             </CaseStudyPage>
         </div>
