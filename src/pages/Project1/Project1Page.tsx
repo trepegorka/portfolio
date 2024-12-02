@@ -1,5 +1,5 @@
 import {classNames} from "src/shared/helpers/classNames/classNames.ts";
-import cls from './Project1Page.module.scss'
+import cls from './../page.module.scss'
 import {CaseStudyPage} from "src/widgets/CaseStudyPage/CaseStudyPage.tsx";
 
 interface Project1PageProps {
@@ -12,7 +12,7 @@ export const Project1Page = ({className}: Project1PageProps) => {
     const liveLink = ''
     const gitLink = 'https://github.com/trepegorka/advanced-frontend'
     const projectImageSrc = 'https://i.ibb.co/42QLMs5/image.png'
-    const skills = ['Javascript 2020+', 'React 18', 'Typescript', 'Webpack', 'Redux',
+    const skills = ['React 18', 'Typescript', 'Webpack', 'Redux',
         'Eslint', 'Stylelint', 'Jest', 'Storybook', 'Babel', 'loki', 'i18n', 'CI/CD', 'Husky',
         'Git', 'Npm', 'Feature-Sliced Design', 'UI frameworks', '...']
     return (
@@ -27,7 +27,7 @@ export const Project1Page = ({className}: Project1PageProps) => {
                 gitLink={gitLink}
             >
                 <p>
-                    The development of this application is currently in progress. Within this project,
+                    The development of this application is currently stopped. Within this project,
                     I'm studying fundamental enterprise development patterns to lay a solid
                     foundation. I'm using the latest improvements in JavaScript to create dynamic
                     user interfaces with React 18. Additionally,

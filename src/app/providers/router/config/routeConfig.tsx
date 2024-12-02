@@ -1,15 +1,17 @@
-import { type RouteProps } from 'react-router-dom'
+import {type RouteProps} from 'react-router-dom'
 import {MainPage} from "src/pages/Main/MainPage.tsx";
 import {Project1Page} from "src/pages/Project1/Project1Page.tsx";
 import {Project2Page} from "src/pages/Project2/Project2Page.tsx";
 import {Project3Page} from "src/pages/Project3/Project3Page.tsx";
+import {Project4Page} from "src/pages/Project4/Project4Page.tsx";
 
 export enum AppRoutes {
     MAIN = 'main',
     ROOT = 'root',
     PROJECT1 = 'project1',
     PROJECT2 = 'project2',
-    PROJECT3 = 'project3'
+    PROJECT3 = 'project3',
+    PROJECT4 = 'project4'
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
@@ -17,6 +19,7 @@ export const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.PROJECT1]: '/project1',
     [AppRoutes.PROJECT2]: '/project2',
     [AppRoutes.PROJECT3]: '/project3',
+    [AppRoutes.PROJECT4]: '/project4',
     [AppRoutes.ROOT]: '',
 }
 
@@ -40,5 +43,9 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
     [AppRoutes.PROJECT3]: {
         path: RoutePath.project3,
         element: <Project3Page/>
+    },
+    [AppRoutes.PROJECT4]: {
+        path: RoutePath.project4,
+        element: <Project4Page/>
     }
 }

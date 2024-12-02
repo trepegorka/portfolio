@@ -16,7 +16,7 @@ export const AboutContentMain = ({className}: AboutContentMainProps) => {
                 <p className={cls.aboutContentDetailsPara}>
                     I'm a <strong>Full-stack Web Developer</strong> building the dynamic Websites,
                     Web Applications and frontend-less scripts that leads to the success of the overall product. Check out some of
-                    my work in the <a href={'#projects'}>Projects</a> section.
+                    my work in the <a href={'#projects'} className={cls.link}>Projects</a> section.
                 </p>
                 <p className={cls.aboutContentDetailsPara}>
                     I develop solutions for <strong>Business Applications</strong>, improve performance,

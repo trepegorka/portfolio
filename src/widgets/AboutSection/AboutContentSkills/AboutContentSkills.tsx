@@ -36,6 +36,7 @@ export const AboutContentSkills = ({className}: AboutContentSkillsProps) => {
             <div className={cls.skills}>
                 <SkillContainer>Express.js</SkillContainer>
                 <SkillContainer>Prisma ORM</SkillContainer>
+                <SkillContainer>Postman</SkillContainer>
                 <SkillContainer>Socket.io</SkillContainer>
                 <SkillContainer>Webpack</SkillContainer>
                 <SkillContainer>Vite</SkillContainer>

@@ -1,5 +1,5 @@
 import {classNames} from "src/shared/helpers/classNames/classNames.ts";
-import cls from './Project3Page.module.scss'
+import cls from './../page.module.scss'
 import {CaseStudyPage} from "src/widgets/CaseStudyPage/CaseStudyPage.tsx";
 
 interface Project3PageProps {

@@ -19,11 +19,11 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({className}: Pro
 
                 <div className={cls.projectsContent}>
                     <ProjectRow
-                        imageSrc={'https://i.ibb.co/42QLMs5/image.png'}
-                        imageAlt={'Software Screenshot 1'}
-                        title={'Healthcare Web Portal'}
+                        imageSrc={'https://i.ibb.co/Njr58S4/patient-portal-1.png'}
+                        imageAlt={'Nodanorm Portal'}
+                        title={'Healthcare Nodanorm Portal'}
                         text={'This was a portal for clinic clients, doctors, and management with a wide range of functionalities, including doctor appointments, staff hiring, and other useful features.'}
-                        linkTo={'/project1'}
+                        linkTo={'/project4'}
                     />
 
                     <ProjectRow
