@@ -9,38 +9,52 @@ interface AboutContentSkillsProps {
 export const AboutContentSkills = ({className}: AboutContentSkillsProps) => {
     return (
         <div className={classNames(cls.AboutContentSkills, {}, [className])}>
-            <h3 className={cls.aboutContentTitle}>My Skills</h3>
+            <h3 className={cls.aboutContentTitle}>Main Skills</h3>
             <div className={cls.skills}>
+                <SkillContainer>React.js</SkillContainer>
                 <SkillContainer>Next.js</SkillContainer>
                 <SkillContainer>Typescript</SkillContainer>
                 <SkillContainer>PostgreSQL</SkillContainer>
-                <SkillContainer>Tailwind CSS</SkillContainer>
                 <SkillContainer>Redux(RTK)</SkillContainer>
-                <SkillContainer>SASS</SkillContainer>
-                <SkillContainer>Webpack</SkillContainer>
-                <SkillContainer>Vite</SkillContainer>
-                <SkillContainer>Jest</SkillContainer>
-                <SkillContainer>Storybook</SkillContainer>
-                <SkillContainer>Loki</SkillContainer>
                 <SkillContainer>GIT</SkillContainer>
-                <SkillContainer>CI/CD</SkillContainer>
+            </div>
+            <h3 className={classNames(cls.aboutContentTitle, {}, [cls.secondaryTitle])}>Back-end technologies</h3>
+            <div className={cls.skills}>
+                <SkillContainer>Node.js</SkillContainer>
+                <SkillContainer>Java SE</SkillContainer>
+                <SkillContainer>Python</SkillContainer>
+            </div>
+            <h3 className={classNames(cls.aboutContentTitle, {}, [cls.secondaryTitle])}>Styling</h3>
+            <div className={cls.skills}>
+                <SkillContainer>CSS</SkillContainer>
+                <SkillContainer>SASS</SkillContainer>
+                <SkillContainer>Tailwind CSS</SkillContainer>
+                <SkillContainer>Bootstrap</SkillContainer>
+                <SkillContainer>CSS in JS</SkillContainer>
             </div>
             <h3 className={classNames(cls.aboutContentTitle, {}, [cls.secondaryTitle])}>Secondary skills</h3>
             <div className={cls.skills}>
-                <SkillContainer>Java SE</SkillContainer>
-                <SkillContainer>Python</SkillContainer>
-                <SkillContainer>Bootstrap</SkillContainer>
+                <SkillContainer>Express.js</SkillContainer>
+                <SkillContainer>Prisma ORM</SkillContainer>
+                <SkillContainer>Socket.io</SkillContainer>
+                <SkillContainer>Webpack</SkillContainer>
+                <SkillContainer>Vite</SkillContainer>
+                <SkillContainer>Jest/RTL</SkillContainer>
+                <SkillContainer>Loki</SkillContainer>
+                <SkillContainer>Storybook</SkillContainer>
+                <SkillContainer>CI/CD</SkillContainer>
+                <SkillContainer>MUI</SkillContainer>
                 <SkillContainer>ANT Design</SkillContainer>
+                <SkillContainer>Chakra UI</SkillContainer>
+                <SkillContainer>Shadcn UI</SkillContainer>
                 <SkillContainer>Webflow</SkillContainer>
+                <SkillContainer>Shopify</SkillContainer>
             </div>
             <h3 className={classNames(cls.aboutContentTitle, {}, [cls.secondaryTitle])}>In study</h3>
             <div className={cls.skills}>
-                <SkillContainer>Advanced Typescript</SkillContainer>
-                <SkillContainer>Cypress</SkillContainer>
-                <SkillContainer>Docker</SkillContainer>
-                <SkillContainer>GraphQL</SkillContainer>
+                <SkillContainer>Web3, Blockchain</SkillContainer>
+                <SkillContainer>Advanced Testing</SkillContainer>
                 <SkillContainer>React Native</SkillContainer>
-                <SkillContainer>Mongo DB</SkillContainer>
             </div>
         </div>
     );
