@@ -19,6 +19,24 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({className}: Pro
 
                 <div className={cls.projectsContent}>
                     <ProjectRow
+                        imageSrc={'https://i.ibb.co/nC6BNN1/Screenshot-2024-12-02-195112.png'}
+                        imageAlt={'Paycrown p2p'}
+                        title={'Paycrown P2P - payment provider'}
+                        text={'P2P payment provider developed in team using React.js, Typescript and Node.js. The application includes working with payment systems, user accounts, administration, supporting, merchant systems and other useful features.'}
+                        linkTo={'/project5'}
+                    />
+
+                    <ProjectRow
+                        imageSrc={'https://i.ibb.co/V25s3SL/IMG-5179.png'}
+                        imageAlt={'Software 69gems'}
+                        title={'Web3 App'}
+                        text={'Web3 Application developed using React.js, Typescript and Node.js with Express and Socket.io. The application includes working with Web3 Solana network and have game-like features.'}
+                        linkTo={'/'}
+                        disabled={true}
+                        mobile={true}
+                    />
+
+                    <ProjectRow
                         imageSrc={'https://i.ibb.co/Njr58S4/patient-portal-1.png'}
                         imageAlt={'Nodanorm Portal'}
                         title={'Healthcare Nodanorm Portal'}
@@ -29,7 +47,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({className}: Pro
                     <ProjectRow
                         imageSrc={'https://i.ibb.co/XS3Bw3Q/image.png'}
                         imageAlt={'Software Screenshot phone'}
-                        title={'Workout App\nIn Progress...'}
+                        title={'Workout App'}
                         text={'Workout Application developed using UI Frameworks such as Chakra UI. The application includes working with logical operations, login form and backend requests.'}
                         linkTo={'/'}
                         disabled={true}
@@ -39,7 +57,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({className}: Pro
                     <ProjectRow
                         imageSrc={'https://i.ibb.co/42QLMs5/image.png'}
                         imageAlt={'Software Screenshot 1'}
-                        title={'FrontEnd in Production\nIn Progress...'}
+                        title={'FrontEnd in Production'}
                         text={'Enterprise application developed using powerful development solutions. This application includes development from scratch, test coverage, writing storybook for other developers, optimization, configurations and much more. '}
                         linkTo={'/project1'}
                     />
