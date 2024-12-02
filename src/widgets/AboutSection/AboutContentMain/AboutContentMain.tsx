@@ -14,9 +14,9 @@ export const AboutContentMain = ({className}: AboutContentMainProps) => {
             <h3 className={cls.aboutContentTitle}>Get to know me!</h3>
             <div className={cls.aboutContentDetails}>
                 <p className={cls.aboutContentDetailsPara}>
-                    I'm a <strong>Frontend Web Developer</strong> building the Front-end of Websites and
-                    Web Applications that leads to the success of the overall product. Check out some of
-                    my work in the <strong>Projects</strong> section.
+                    I'm a <strong>Full-stack Web Developer</strong> building the dynamic Websites,
+                    Web Applications and frontend-less scripts that leads to the success of the overall product. Check out some of
+                    my work in the <a href={'#projects'}>Projects</a> section.
                 </p>
                 <p className={cls.aboutContentDetailsPara}>
                     I develop solutions for <strong>Business Applications</strong>, improve performance,

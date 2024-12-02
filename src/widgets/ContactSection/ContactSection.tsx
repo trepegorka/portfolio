@@ -15,8 +15,8 @@ export const ContactSection = ({className}: ContactSectionProps) => {
                 <SectionTitle 
                     title={'Contact'} 
                     subtitle={
-                        <span>Feel free to Contact me via Telegram: ${<a target={"_blank"} href={'https://t.me/egor_ptpch'}>@egor_ptpch</a>} or by submitting the form below, ` +
-                            'and I will get back to you as soon as possible</span>}/>
+                        <span>Feel free to Contact me via Telegram: <a target={"_blank"} href={'https://t.me/egor_ptpch'}>@egor_ptpch</a> or by submitting the form below,
+                            and I will get back to you as soon as possible</span>}/>
                 <ContactForm/>
             </div>
         </section>
