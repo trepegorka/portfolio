@@ -4,7 +4,7 @@ import cls from './SectionTitle.module.scss'
 interface SectionTitleProps {
     className?: string
     title: string
-    subtitle: string
+    subtitle: React.ReactNode
 }
 
 export const SectionTitle = ({className, title, subtitle}: SectionTitleProps) => {
