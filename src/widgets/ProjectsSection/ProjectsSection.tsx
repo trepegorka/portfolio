@@ -7,17 +7,25 @@ interface ProjectsSectionProps {
     className?: string;
 }
 
-export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className }: ProjectsSectionProps) => {
+export const ProjectsSection: React.FC<ProjectsSectionProps> = ({className}: ProjectsSectionProps) => {
     return (
         <section id="projects" className={classNames(cls.ProjectsSection, {}, [className, cls.secPad])}>
             <div className={cls.mainContainer}>
-                    
-                <SectionTitle title={'Projects'} 
-                    subtitle={'Here you will find some of the personal and clients ' +
-                        'projects that I created with each project containing its own case study' }
+
+                <SectionTitle title={'Projects'}
+                              subtitle={'Here you will find some of the personal and clients ' +
+                                  'projects that I created with each project containing its own case study'}
                 />
 
                 <div className={cls.projectsContent}>
+                    <ProjectRow
+                        imageSrc={'https://i.ibb.co/42QLMs5/image.png'}
+                        imageAlt={'Software Screenshot 1'}
+                        title={'Healthcare Web Portal'}
+                        text={'This was a portal for clinic clients, doctors, and management with a wide range of functionalities, including doctor appointments, staff hiring, and other useful features.'}
+                        linkTo={'/project1'}
+                    />
+
                     <ProjectRow
                         imageSrc={'https://i.ibb.co/XS3Bw3Q/image.png'}
                         imageAlt={'Software Screenshot phone'}
