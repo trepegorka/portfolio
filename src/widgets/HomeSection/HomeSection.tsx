@@ -17,8 +17,8 @@ export const HomeSection = ({className}: HomeSectionProps) => {
     return (
         <div id={'home'}>
             <TopSectionCustomBg className={className}>
-                <HomeContent title={'Hey, I\'m Egor Potapko'}
-                    text={'A Frontend focused Web Developer building the Frontend of Websites and ' +
+                <HomeContent title={'Hi! I\'m Egor Potapko'}
+                    text={'A Frontend focused Web Developer building the Websites and ' +
                                  'Web Applications that leads to the success of the overall product'}
                     buttonText={'About Me'}
                     linkTo={RoutePath.main.concat('#about')}/>
