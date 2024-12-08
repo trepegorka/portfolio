@@ -10,4 +10,8 @@
   width: 100%;
 }
 
+.disabled {
+  cursor: not-allowed;
+}
+
 /*# sourceMappingURL=SocialIcon.module.css.map */

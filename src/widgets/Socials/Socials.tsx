@@ -27,6 +27,7 @@ export const Socials = ({className, invertedColor = false}: SocialsProps) => {
                     : 'https://d33wubrfki0l68.cloudfront.net/ef67339f7016cb09ba66366c1dc9145ac69f2a21/feca1/assets/png/twitter-ico.png'}
                 alt="Egor Potapko Twitter Profile"
                 className={classNames(cls.homeHero__socialIcon, {}, [className])}
+                disabled={true}
             />
 
             <SocialIcon

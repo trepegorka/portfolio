@@ -7,6 +7,7 @@ interface SocialIconProps {
     href: string,
     svgSrc: string,
     alt: string,
+    disabled?: boolean,
 }
 
 export const SocialIcon: FC<SocialIconProps> = (props) => {
@@ -15,9 +16,10 @@ export const SocialIcon: FC<SocialIconProps> = (props) => {
         href,
         svgSrc,
         alt,
+        disabled
     } = props
     return (
-        <div className={classNames(cls.SocialIcon, {}, [className])}>
+        <div className={classNames(cls.SocialIcon, {[cls.disabled]:disabled}, [className])}>
             <a href={href} className={cls.homeHero__socialIconLink}
                 rel="noreferrer"
                 target="_blank">
