@@ -23,7 +23,7 @@ export const Footer: React.FC<FooterProps> = ({ className }: FooterProps) => {
                     <div className={cls.mainFooterRow2}>
                         <h2 className={cls.heading}>Egor Potapko</h2>
                         <p className={cls.mainFooterShortDesc}>
-                            A Frontend focused Web Developer building the Frontend of Websites
+                            A Full-Stack Web Developer building the Frontend of Websites
                             and Web Applications that leads to the success of the overall
                             product
                         </p>
