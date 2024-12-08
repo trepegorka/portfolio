@@ -18,9 +18,11 @@ export const SocialIcon: FC<SocialIconProps> = (props) => {
         alt,
         disabled
     } = props
+
+    const windowLocation = window.location.href;
     return (
         <div className={classNames(cls.SocialIcon, { [cls.disabled]: disabled || false}, [className])}>
-            <a href={href} className={classNames(cls.homeHero__socialIconLink, { [cls.disabled]: disabled || false}, [])}
+            <a href={disabled ? windowLocation : href } className={classNames(cls.homeHero__socialIconLink, { [cls.disabled]: disabled || false}, [])}
                 rel="noreferrer"
                 target="_blank">
                 <img
