@@ -37,6 +37,7 @@ export const Socials = ({className, invertedColor = false}: SocialsProps) => {
                     : 'https://d33wubrfki0l68.cloudfront.net/493f1aa6da674c05bc606ba5b9e8092b881e8626/67c76/assets/png/yt-ico.png'}
                 alt="Egor Potapko Youtube Profile"
                 className={classNames(cls.homeHero__socialIcon, {}, [className])}
+                disabled={true}
             />
 
             <SocialIcon
@@ -55,6 +56,7 @@ export const Socials = ({className, invertedColor = false}: SocialsProps) => {
                     : 'https://d33wubrfki0l68.cloudfront.net/c7b1e51b8c75a239d68af3d42866666580f390ec/dcc7c/assets/png/blog-ico.png'}
                 alt="Egor Potapko Github Profile"
                 className={classNames(cls.homeHero__socialIcon, {}, [className])}
+                disabled={true}
             />
         </>
     );
