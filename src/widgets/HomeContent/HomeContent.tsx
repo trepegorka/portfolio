@@ -47,11 +47,11 @@ export const HomeContent = (props: HomeContentProps) => {
             </div>
             <div className={cls.contacts_buttons}>
                 <HashLink to={'https://t.me/trepesk'} target={"_blank"}
-                          onClick={() => handleButtonClick('MyChannel', 'MyChannel', 'https://t.me/trepesk')}>
+                          onClick={() => handleButtonClick('MyChannel', 'Contact', 'https://t.me/trepesk')}>
                     <Button theme={ThemeButton.BIG}>My Channel</Button>
                 </HashLink>
                 <HashLink to={'https://t.me/egor_ptpch'} target={"_blank"}
-                          onClick={() => handleButtonClick('MyContact', 'MyContact', 'https://t.me/egor_ptpch')}>
+                          onClick={() => handleButtonClick('MyContact', 'Contact', 'https://t.me/egor_ptpch')}>
                     <Button theme={ThemeButton.BIG}>Contact me</Button>
                 </HashLink>
             </div>
