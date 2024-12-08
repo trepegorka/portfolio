@@ -19,7 +19,7 @@ export const SocialIcon: FC<SocialIconProps> = (props) => {
         disabled
     } = props
     return (
-        <div className={classNames(cls.SocialIcon, {[cls.disabled]:disabled}, [className])}>
+        <div className={classNames(cls.SocialIcon, { [cls.disabled]: disabled || false}, [className])}>
             <a href={href} className={cls.homeHero__socialIconLink}
                 rel="noreferrer"
                 target="_blank">
