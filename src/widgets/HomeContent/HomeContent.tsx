@@ -35,6 +35,14 @@ export const HomeContent = (props: HomeContentProps) => {
                     <Button theme={ThemeButton.BIG} disabled={linkTo===''}>{buttonText}</Button>
                 </HashLink>
             </div>
+            <div className={cls.contacts_buttons}>
+                <HashLink to={'https://t.me/trepesk'} target={"_blank"}>
+                    <Button theme={ThemeButton.BIG}>My Channel</Button>
+                </HashLink>
+                <HashLink to={'https://t.me/egor_ptpch'} target={"_blank"}>
+                    <Button theme={ThemeButton.BIG}>Contact me</Button>
+                </HashLink>
+            </div>
         </div>
     );
 };

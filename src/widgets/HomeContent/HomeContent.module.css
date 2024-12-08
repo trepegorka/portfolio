@@ -47,4 +47,12 @@
   text-align: center;
 }
 
+.contacts_buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2em;
+}
+
 /*# sourceMappingURL=HomeContent.module.css.map */
